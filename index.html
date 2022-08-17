@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@700&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./resources/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="burger" id="burger-menu" style="background-color: white; border-radius: 5px;">
+            <div class="layer1"></div>
+            <div class="layer2"></div>
+            <div class="layer3"></div>
+        </div>
+        <div class="logo">
+            <span class="logo-text"> COOK<span style="color:rgb(255, 255, 255); font-size: 1em;">-MYMEAL</span>
+        </div>
+        <div class="menubar">
+            <ul class="list">
+                <li class="list-items"><a href="#">HOME</a> </li>
+                <li class="list-items"><a href="#">ITEMS TO PURCHASE</a> </li>
+                <li class="list-items"><a href="#">MENUS</a> </li>
+                <li class="list-items"><a href="#">CONTACT US</a> </li>
+            </ul>
+        </div>
+        <div class="cart">
+            <div class="number-of-items"><span class="noi">0</span></div>
+            <i class="fa fa-shopping-cart fa-1x"></i>
+        </div>
+    </nav>
+
+
+    <!-- landing section -->
+    <section class="section1">
+
+        <div class="banner">
+            <h1>FIND YOUR<br> FAVORITE MEAL!</h1>
+            <p>This is a means to find your<br> healthier self.</p>
+            <a href="#products">SHOP NOW</a>
+
+        </div>
+    </section>
+
+    <section class="section2" id="products">
+        <div class="title">
+            <h1>MEALS WE OFFER!!</h1>
+        </div>
+        <!-- this is the json/java side -->
+        <div class="product">
+
+        </div>
+    </section>
+    <div class="cart-sidebar">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fa fa-times" style="font-size:24px; margin-top: 1em;"></i>
+            </span>
+            <br>
+            <br>
+            <h2>Your Cart</h2>
+            <div class="cart-content"> </div>
+        </div>
+        <br>
+        <div class="total-sum">
+            <h1>Your Total: $ <span class="Total-amount">0</span></h1>
+        </div>
+        <br>
+        <br>
+        <div class="clear-cart">
+            <button class="btn clear-cart btn">Clear Cart</button>
+        </div>
+        <div class="clear-cart">
+            <button class="btn clear-cart btn">Proceed</button>
+        </div>
+
+        <div class="menu-sidebar">
+            <div class="close-menu">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="menu-menubar">
+                <ul class="menu-list">
+                    <li class="menu-list-items"><a href="#">HOME</a></li>
+                    <li class="menu-list-items"><a href="#">ITEMS TO PURCHASE</a></li>
+                    <li class="menu-list-items"><a href="#">MENUS</a></li>
+                    <li class="menu-list-items"><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="./product.json"></script>
+</body>
+
+</html>
